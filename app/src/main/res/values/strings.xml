@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">NGSI_APP</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_uploads">Upload</string>
+
+    <string name="btn_upload">UPLOAD</string>
+    <string name="btn_transaction">Upload a Transaction</string>
+    <string name="btn_cheque">Upload a Cheque</string>
+    <string name="btn_takephoto">Take a Photo (Cheque)</string>
+    <string name="btn_takephoto2_deposit">Take a Photo (Deposit)</string>
+
+    <!--Recyclerviews and for others-->
+    <string name="transaction_number">Transaction #</string>
+    <string name="Name">Name</string>
+    <string name="Email">Email</string>
+    <string name="Contact">Contact #</string>
+    <string name="Amount">Amount</string>
+    <string name="dateTime">Date/Time</string>
+    <string name="btn_save">Save and Upload</string>
+    <string name="btn_signup">Sign Up</string>
+
+    <string name="cheque_number">Cheque #</string>
+
+    <!--Login/Register -->
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="Signup">Sign Up</string>
+    <string name="Signout">Sign Out</string>
+
+    <!--Main Activity -->
+    <string name="bank_reference_number">Bank Ref #</string>
+    <string name="username">Username</string>
+    <string name="mobile_number">Mobile #</string>
+    <string name="amount">Amount</string>
+    <string name="status">Status</string>
+    <string name="myHistory">My History</string>
+
+    <!--Placeholders-->
+    <string name="customPlaceholder">_Placeholder</string>
+
+    <!-- No Data -->
+    <string name="noData">No Data</string>
+
+    <!--RecyclerView LIST-->
+    <string name="numOfPending">Pending: </string>
+    <string name="numOfComplete">Complete: </string>
+</resources>

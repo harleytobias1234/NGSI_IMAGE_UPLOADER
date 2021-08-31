@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ngsi_image_uploader">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ngsi_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Design.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.ngsi_image_uploader.Activities.Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ngsi_image_uploader.Activities.Login.LoginActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ngsi_image_uploader.Activities.Login.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER2">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ngsi_image_uploader.Activities.Login.RegisterActivity" />
+        </activity>
+        <activity android:name="com.example.ngsi_image_uploader.MainActivity"
+            android:label="Home"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="NGSI App"
+                android:value="com.example.ngsi_image_uploader.MainActivity" />
+        </activity>
+        <activity android:name="com.example.ngsi_image_uploader.ChequeActivity"
+            android:label="Cheque Upload"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="Upload Cheque"
+                android:value="com.example.ngsi_image_uploader.ChequeActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ngsi_image_uploader.TransactionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="Transaction"
+                android:value="com.example.ngsi_image_uploader.TransactionActivity" />
+        </activity>
+        <activity android:name="com.example.ngsi_image_uploader.HistoryActivity"
+            android:label="@string/myHistory"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="My History"
+                android:value="com.example.ngsi_image_uploader.HistoryActivity" />
+        </activity>
+        <activity android:name="com.example.ngsi_image_uploader.HistoryDetailsActivity"
+            android:label="Details"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="Details"
+                android:value="com.example.ngsi_image_uploader.HistoryDetailsActivity" />
+        </activity>
+        <activity
+            android:name="com.example.ngsi_image_uploader.Activities.ImageViewer"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="Image Preview"
+                android:value="com.example.ngsi_image_uploader.Activities.ImageViewer" />
+        </activity>
+        <!--Testing Area-->
+        <activity
+            android:name="com.example.ngsi_image_uploader.ImageQualityTester"
+            android:label="For Testing"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
+            <meta-data
+                android:name="Image Preview"
+                android:value="com.example.ngsi_image_uploader.ImageQualityTester" />
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+</manifest>
