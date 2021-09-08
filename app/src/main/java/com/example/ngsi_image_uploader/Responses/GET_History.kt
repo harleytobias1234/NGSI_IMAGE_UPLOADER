@@ -1,7 +1,5 @@
 package com.example.ngsi_image_uploader.Responses
 
-import com.example.ngsi_image_uploader.Responses.GET_Transaction.Datum
-
 import com.google.gson.annotations.Expose
 
 import com.google.gson.annotations.SerializedName

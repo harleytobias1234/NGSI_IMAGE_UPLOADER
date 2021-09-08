@@ -14,7 +14,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NGSI_IMAGE_UPLOADER">
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:screenOrientation="portrait"

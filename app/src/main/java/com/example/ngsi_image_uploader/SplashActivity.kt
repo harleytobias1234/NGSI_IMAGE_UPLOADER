@@ -6,7 +6,6 @@ import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
 import kotlin.concurrent.thread
 import android.content.Intent
-import com.example.ngsi_image_uploader.Activities.Login.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 

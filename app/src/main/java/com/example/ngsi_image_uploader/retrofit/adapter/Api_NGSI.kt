@@ -3,15 +3,11 @@ package com.example.ngsi_image_uploader.retrofit.adapter
 import com.example.ngsi_image_uploader.retrofit.*
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-
 import okhttp3.OkHttpClient
-
 import okhttp3.logging.HttpLoggingInterceptor
-import java.util.concurrent.TimeUnit
-
 
 object Api_NGSI {
-    private val BASE_URL = "https://nf7zlnirs8.execute-api.ap-east-1.amazonaws.com"
+    private val BASE_URL = "https://wkjvdbdpo2.execute-api.ap-east-1.amazonaws.com"
     private var retrofit: Retrofit? = null
 
     fun postRegistration(): ApiInterface_POST_Registration? {

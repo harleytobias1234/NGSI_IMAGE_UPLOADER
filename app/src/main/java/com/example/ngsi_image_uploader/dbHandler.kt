@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteDatabase.CursorFactory
 import android.content.ContentValues
 import android.util.Log
-import android.widget.Toast
 import com.example.ngsi_image_uploader.data.Registration
 
 
